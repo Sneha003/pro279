@@ -1,0 +1,50 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+  info [
+    "This world shows all the base graphical geometries."
+  ]
+  title "Base graphical geometries"
+}
+Viewpoint {
+  orientation -0.20786241088924204 0.30342106186583423 0.9299079940271088 0.7395625340719534
+  position -4.6231480588817755 -7.229125308755432 3.898680798921188
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF PLANE Pose {
+  translation 6 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.621333 0.264 0.8
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+        size 0.6 0.6
+      }
+    }
+  ]
+}
+DEF SPHERE Pose {
+  translation 8 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.621333
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 2
+      }
+    }
+  ]
+}
